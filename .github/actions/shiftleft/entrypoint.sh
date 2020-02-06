@@ -44,3 +44,5 @@ curl -XPOST "https://api.github.com/repos/$GITHUB_REPO/issues/$PULL_REQUEST/comm
   -H "Authorization: Bearer $GITHUB_TOKEN" \
   -H "Content-Type: application/json" \
   -d "{\"body\": \"$COMMENT\"}"
+
+sl check-analysis --app "$GITHUB_PROJECT" --branch "$GITHUB_BRANCH"
