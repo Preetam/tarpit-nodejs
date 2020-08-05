@@ -1,0 +1,6 @@
+build_rules:
+  - id: match-all
+    severity:
+        - critical
+        - moderate
+        - info
